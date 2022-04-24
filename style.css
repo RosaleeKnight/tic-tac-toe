@@ -1,0 +1,140 @@
+body {
+    font-size: 36px;
+    font-weight: 700;
+    background: #ffffff;
+}
+.item {
+    margin: 0.4em;
+}
+.board {
+    background-color: #2b3242;
+    background-color: #2b3242;
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    width: 100%;
+    padding: 1em 0 1em 0;
+    margin-bottom: 0;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+}
+.field {
+    font-weight: 600;
+    font-size: 54px;
+    background: radial-gradient(#80d5fd, #6aa3e6);
+    color: #2b3242;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 3px solid #2b3242;
+    border-right: 3px solid #2b3242;
+    outline: none;
+}
+.field.no-r {
+    border-right: none;
+}
+.field.no-b {
+    border-bottom: none;
+}
+.field p {
+    margin: 0px;
+}
+.field:hover {
+    cursor: pointer;
+}
+.btn {
+    background: radial-gradient(#80d5fd, #6aa3e6);
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    box-shadow: -1px 7px 22px -6px #bebebe;
+}
+.btn:focus {
+    outline: none;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.select {
+    align-self: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.btn-p {
+    width: 15em;
+    height: 2.5em;
+    margin: 1em 1em 1em 1em;
+}
+.selected {
+    color: #2b3242;
+    font-weight: 600;
+    border: 2px solid #2b3242;
+    box-shadow: -1px 7px 22px -6px #bebebe;
+}
+.not-selected {
+    box-shadow: none;
+    font-weight: 600;
+    color: #bebebe;
+    border-width: 1.5px;
+}
+.player {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.restart {
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: 0% 0% 10px 10px / 10px 10px 10px 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+}
+select {
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #2b3242;
+    font-weight: 500;
+    font-size: 14px;
+    color: #2b3242;
+}
+select:hover {
+    cursor: pointer;
+}
+.win p {
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 1;
+}
+.winner {
+    position: fixed;
+    left: 45%;
+    top: 15%;
+    transform: translate(-50%, 0);
+    font-size: 80px;
+}
+.sign {
+    position: fixed;
+    left: 60%;
+    top: 15%;
+    transform: translate(-50%, 0);
+    font-size: 80px;
+}
+.hide {
+    display: none;
+}
